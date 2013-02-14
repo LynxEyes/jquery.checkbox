@@ -1,7 +1,5 @@
 (function($){
-
   //---------------------------------------------------------------------------
-  // This "should" be on a separate file... this is the "checkbox plugin"
   $.fn.checked = function(yes){
     if (yes !== undefined) return $(this).data("checked", yes);
 
@@ -10,7 +8,6 @@
     return $(this).data("checked");
   };
   //------------------------------------------------------------------------------
-  // This "should" be on a separate file... this is the "checkbox plugin"
   $(document).on("check-change", ".btn.checkbox", function(e, check){
     if ($(this).enabled()){
       if (check != undefined){
