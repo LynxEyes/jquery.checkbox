@@ -1,0 +1,24 @@
+@import "backgrounds";
+$size: 16px;
+
+.checkbox{
+  display: inline-block;
+  .icon{
+    display: inline-block;
+    width:$size;
+    height:$size;
+    background: url(/images/jquery.checkbox.png) no-repeat;
+  }
+  &.checked, &.true{
+    .icon{background-position:-16px 0px;}
+  }
+}
+//-------------------------------------------------
+.input-prepend, .input-append {
+  .add-on.btn.checkbox{
+    @include background-gradient(#FFF, #dba9a9);
+    &.checked{
+      @include background-gradient(#FFF, #a9dba9);
+    }
+  }
+}
