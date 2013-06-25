@@ -5,12 +5,12 @@ $size: 16px;
   display: inline-block;
   .icon{
     display: inline-block;
-    width:$size;
-    height:$size;
+    width: $size;
+    height: $size;
     background: url(/images/jquery.checkbox.png) no-repeat;
   }
   &.checked, &.true{
-    .icon{background-position:-16px 0px;}
+    .icon{background-position: -$size 0px;}
   }
 }
 //-------------------------------------------------
